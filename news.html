@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News |LNG Insurance</title>
+	
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/shield.png">
+
+	<!-- External CSS link -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/news.css">
+
+	<!-- Ionic icons CDN -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Jquery CDN link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<!-- Scroll to top starts -->
+	<button id="topBtn">
+	  	<ion-icon name="arrow-up-outline"></ion-icon>
+	</button>
+	<!-- Scroll to top ends -->
+
+	<!-- Navigation starts -->
+	<nav>
+		<div class="menu-container nav-wrapper">
+			<div class="brand">
+				<a href="index.html">
+					<img src="img/LNG logo.png" alt="LNG-logo">
+				</a>
+			</div>
+
+			<div class="hamberger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<ul class="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="insurance.html">Insurance</a>
+					<ul class="dropdown-list">
+						<li><a href="health.html">Health Policy</a></li>
+						<li><a href="auto.html">Auto Policy</a></li>
+						<li><a href="home.html">Home Policy</a></li>
+						<li><a href="childcare.html">Children Policy</a></li>
+						<li><a href="vacation.html">Travel Policy</a></li>
+						<li><a href="belonging.html">Belongings Policy</a></li>
+					</ul>
+				    
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+				<li><button class="btn btn-blue">
+						<a href="tel:9876654321">+91 8884835537</a>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+	<!-- --------------------------- News ---------------------------- -->
+	<section class="news">
+		<div class="container">
+			<h2 class="heading">News</h2>
+
+			<div class="news-catalogue">
+				<div class="news-card">
+					
+						<img src="img/news-1.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">How credit affects your Insurance</h2>
+					</a>
+					<p class="author">
+					<p class="para-line">
+						Credit can affect your insurance premiums as insurance companies may use credit-based insurance scores to assess risk. A good credit score may lead to lower premiums while a poor score may lead to higher premiums.					</p>
+				</div>
+				<div class="news-card">
+						<img src="img/news-2.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">Five insurance mistakes to avoid</h2>
+					</a>
+					<p class="author">
+					<p class="para-line">
+						Avoid underinsuring, not shopping around, neglecting to read policies, not updating policies, missing payments, not understanding coverage, and not reviewing policies annually.					</p>
+				</div>
+				<div class="news-card">
+						<img src="img/news-3.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">Top 5 Trends in the Insurance Industry</h2>
+					</a>
+					<p class="author"></p>
+					<p class="para-line">
+						Trends in the insurance industry include increased use of technology, personalized products and services, emphasis on customer experience, and focus on sustainability and climate change.					</p>
+				</div>
+				<div class="news-card">
+						<img src="img/news-4.png" alt="Post featured image" title="Post featured image" class="featured-image">
+						<h2 class="heading">How to choose the best Health Insurance</h2>
+					</a>
+					<p class="author">
+					<p class="para-line">
+						To choose the best health insurance, consider your healthcare needs and budget, compare policies from different providers, check network coverage, read reviews, and understand the terms and conditions of the policy.					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- --------------------------- News ---------------------------- -->
+
+
+
+	<!-- ---------------------------- Footer---------------------------- -->
+	<footer>
+		<div class="footer-container">
+			<p class="para-line white">Copyright © 2023</p>
+		</div>
+	</footer>
+	<!-- ---------------------------- Footer---------------------------- -->
+
+
+
+	<!-------------- Importing JS file -------------->
+	<script src="js/script.js"></script>	
+
+	<!------------------------ Scroll to top button -------------------->
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 40)
+			{
+				$('#topBtn').fadeIn();
+			}
+			else
+			{
+				$('#topBtn').fadeOut();
+			}
+			});
+
+			$("#topBtn").click(function(){
+				$('html, body').animate({scrollTop: 0},800);
+			});             
+		});
+	</script>
+</body>
+</html>
